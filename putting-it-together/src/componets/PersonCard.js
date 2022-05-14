@@ -23,3 +23,25 @@ class PersonCard extends Component {
 }
 
 export default PersonCard;
+
+
+// func style 
+// import React, {useState} from 'react';
+// const PersonCard = (props) => {
+
+// const [count,setCount] = useState(props.age);
+
+// const clickHandler = () => {
+//     setCount(count + 1);
+// }          
+
+//     return(
+//         <div>
+//             <h1>{ props.lastName }, { props.firstName }</h1>
+//             <p>Age: { count }</p>
+//             <p>Hair Color: { props.hairColor }</p>
+//             <button onClick={clickHandler}>Birthday button for {props.firstName} </button>
+//         </div>
+//     );
+// }
+// export default PersonCard;
