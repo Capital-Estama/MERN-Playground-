@@ -76,7 +76,7 @@ const UserForm = (props) => {
 
     const passCompare = () => {
         console.log(`cPass ${cPass} vs  password ${password}`);
-        if(cPass != password) {
+        if(cPass !== password) {
             setcError("Password does not macth!");
         }
 
@@ -116,7 +116,7 @@ const UserForm = (props) => {
                 </div>
                 <div> 
                 <label>Password:</label>
-                <input type="text" onChange={handlePassword} ></input>
+                <input type="password" onChange={handlePassword} ></input>
                 {
                     passwordError ?
                     <p style={{color:'red'}}>{ passwordError }</p> :
@@ -125,7 +125,7 @@ const UserForm = (props) => {
                 </div>
                 <div> 
                 <label>Confirm Password:</label>
-                <input type="text" onChange={confirmPassword }></input>
+                <input type="password" onChange={confirmPassword }></input>
                 {
                     passwordConfirmationError ?
                     <p style={{color:'red'}}>{ passwordConfirmationError }</p> :
