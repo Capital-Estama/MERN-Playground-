@@ -62,10 +62,7 @@ const Pokemon = props => {
 
     return (
         <div className='text-center container-sm'>
-          {/* disabling the button so we can just use useEffect */}
-          {/* <button type="submit" onClick={getPokemon}>Fetch Pokemon</button> */}
-    
-          {/* map and plot all names */}
+
           {
             PokemonList.map((index, i) => {
               return <ul>
